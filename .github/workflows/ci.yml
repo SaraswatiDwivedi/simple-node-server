@@ -1,0 +1,11 @@
+name: Pipeline demo
+on:
+  push:
+    branches:
+      - "**"
+jobs:
+  hello-job:
+    run-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Github Action"
